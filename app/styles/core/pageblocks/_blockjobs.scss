@@ -1,0 +1,79 @@
+.block-jobs {
+  &__search {
+    @include rem(padding, 60px 0);
+  }
+  &__list{
+    display: block;
+    font-size: 0px;
+  }
+  &__list-item{
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+  }
+  &__link{
+      text-decoration: none;
+      color: $gray-710;
+      font-weight: 500;
+      &:hover,
+      &:focus{
+        text-decoration: none;
+        color: $dark;
+      }
+  }
+  &__figure{
+      padding-bottom: 52px;
+  }
+  &__info{
+    color: $gray-920;
+    @include rem(font-size, 19px);
+    line-height: 23px;
+    @include rem(margin-top, 30px);
+    font-weight: 500;
+  }
+  &__categories{
+    @include rem(padding-bottom, 120px);
+  }
+}
+
+.input-group {
+  &--job {
+    max-width: 464px;
+    margin: 0 auto;
+
+    >.form-control {
+      background-color: $cyan-two;
+      color: white;
+      outline: none;
+      border-radius: 6px;
+      @include rem(padding, 10px 10px);
+      @include rem(font-size, 13px);
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        color: $cyan-three;
+      }
+
+      &:not(textarea) {
+        height: calc(2.4em + 9px + 2px);
+      }
+    }
+
+    .input-group-prepend {
+      >.input-group-text {
+        @include rem(padding, 2px 13px);
+        background-color: $cyan-two;
+        color: white;
+        width: 46px;
+        text-align: center;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+}

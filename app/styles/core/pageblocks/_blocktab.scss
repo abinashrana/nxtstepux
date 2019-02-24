@@ -1,0 +1,118 @@
+.block-searchresults{
+    display: block;
+    &__tabs{
+    }
+    &__item{
+        border-radius: 0px;
+        @include rem(padding, 14px 30px);
+        @include rem(font-size, 14px);
+        font-weight: 600;
+        position: relative;
+        color: $gray-220;
+        &:hover,
+        &:focus{
+            color: $cyan;
+            text-decoration: none;
+        }
+        &::after{
+            width: 1px;
+            height: 20px;
+            background-color: $gray-200;
+            display: block;
+            position: absolute;
+            right: 0;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        &.active{
+            background-color: transparent;
+            color: $cyan;
+            &::before{
+                width: 100%;
+                background-color: $cyan;
+                content: "";
+                height: 2px;
+                display: block;
+                    bottom: 0;
+                    position: absolute;
+                    left: 0;
+            }
+        }
+    }
+    &__content{
+        display: block;
+        @include rem(padding, 60px 0 120px);
+    }
+    &--deck{
+        margin-left: -5px;
+        margin-right: -5px;
+    
+    }
+    &--card{
+        @include rem(padding, 12px);
+        @include rem(margin, 5px 0);
+        border-color: $gray-230;
+        &.card-row{
+            @include rem(padding,15px 20px);
+        }
+    }
+    &--body{
+        @include rem(padding, 12px 0 25px 0);
+        &-flat{
+            @include rem(padding-top, 10px);
+        }
+    }
+    &__subtitle{
+        @include rem(margin-bottom, 10px);
+    }
+    &__figure{
+        padding-bottom: 148px;
+    }
+    &__title{
+        @include rem(font-size, 20px);
+        @include rem(margin-bottom, 0px);
+    }
+
+    &--16{
+        @include rem(font-size, 16px);
+    }
+    &--text{
+        color:  $gray-910;
+        @include rem(font-size, 12px);
+        line-height: 15px;
+        @include rem(margin-bottom,28px);
+    }
+    &--footer{
+        background-color: transparent;
+    }
+    &__header{
+        &-logo{
+
+        }
+        &-love{
+            width: 23px;
+            height: 21px;
+            svg{
+                display: block;
+                fill: white;
+                stroke: rgb(151,151,151);
+                
+            }
+            &.love-it{
+                svg{
+                    display: block;
+                    fill: $primary;
+                    stroke: $primary;
+                    
+                }
+            }
+           
+        }
+    }
+}

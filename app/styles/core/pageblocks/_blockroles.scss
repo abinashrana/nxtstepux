@@ -1,0 +1,35 @@
+.block-roles{
+    @include rem(padding, 90px 0 90px 0);
+    &__heading{
+     
+        @include rem(margin-bottom, 20px);
+    }
+    &__content{
+        @include rem(margin-top, 70px);
+    }
+    &__wrap{
+        max-width: 1034px;
+        margin: 0 auto;
+    }
+    &__box{
+        @include rem(padding, 23px);
+        @include rem(margin, 0 5px);
+    }
+    &__para{
+        @include rem(font-size, 15px);
+        line-height: 18px;
+        font-weight: 500;
+        color:$gray-1000;
+        @include rem(margin, 36px 0 43px 0);
+    }
+    &__subtitle{
+        // @include rem(font-size, 15px);
+    }
+    &__txt{
+        @include rem(margin-bottom, 6px);
+    }
+    &-slider{
+        
+    }
+}
+

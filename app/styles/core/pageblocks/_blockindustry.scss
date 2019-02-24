@@ -1,0 +1,53 @@
+
+.block-industry{
+    &__content{
+        @include rem(padding, 50px 0 94px);
+    }
+    &__maintitle{
+        display: block;
+    }
+    &__body{
+        @include rem(font-size, 16px);
+        line-height: 20px;
+        color: $gray-910;
+        h5{
+            @include rem(font-size, 22px);
+            font-weight: 700;
+            color: $dark;
+        }
+        p{
+            line-height: 20px;
+            color: $gray-910;
+        }
+    }
+}
+
+.input-group--240{
+    max-width: 240px;
+}
+
+.input-group--search{
+    > .form-control{
+        background-color: $cyan-two;
+        color: white;
+        outline: none;
+        &:hover,
+        &:focus{
+           box-shadow: none;
+        }
+        &::placeholder{
+            color: white;
+        }
+        &:not(textarea){
+            height: calc(1.5em + 9px + 2px);
+        }
+    }
+    .input-group-prepend {
+        > .input-group-text{
+            @include rem(padding, 2px 13px);
+            background-color: $cyan-two; 
+            color: white;
+            width: 33px;
+        }
+    }
+}

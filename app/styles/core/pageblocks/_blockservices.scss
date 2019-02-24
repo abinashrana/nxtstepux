@@ -1,0 +1,24 @@
+.block-services{
+    @include rem(padding, 127px 0 177px 0);
+    &__heading{
+     
+        @include rem(margin-bottom, 20px);
+    }
+    &__wrap{
+        max-width: 1034px;
+        margin: 0 auto;
+    }
+    &__box{
+        max-width: 287px;
+        margin: 0 auto;
+    }
+    &__para{
+        @include rem(font-size, 20px);
+        line-height: 24px;
+        font-weight: 500;
+        color:$dark;
+        @include rem(margin-top, 6px);
+    }
+    
+}
+

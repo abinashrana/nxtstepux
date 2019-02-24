@@ -1,0 +1,49 @@
+.block-footer{
+    @include rem(font-size,15px);
+    &__mid{
+        @include rem(padding, 12px 0 12px 0);
+    }
+    &--list{
+        margin-bottom: 0;
+        li{
+            @include rem(margin, 20px 0);
+            @include rem(font-size,15px);
+            font-weight: 600;
+            a{
+                color: $gray-900;
+            }
+        }
+    }
+    &__help{
+        display: block;
+    }
+    &__info{
+        display: block;
+        @include rem(font-size,15px);
+        line-height: 20px;
+        font-weight: 600;
+    }
+    &__btm{
+        display: block;
+        // @include rem(padding, 30px 0);
+        @include rem(font-size,11px);
+        font-weight: 600;
+        color: $gray-400;
+    }
+    &__social{
+        font-size: 0px;
+       a{
+           display: block;
+       }
+    }
+}
+
+.icn-social{
+     fill: $gray-800;
+     width: 34px;
+     height: 32px; 
+     &:hover,
+     &:focus{
+        fill: $gray-900;
+     }     
+}

@@ -1,0 +1,11 @@
+$grid-gutter-width-10: 10px;
+$grid-columns-10: 5px;
+
+.row-10{
+    @include make-row($gutter: $grid-gutter-width-10);
+}
+
+.col-p-10{
+   padding-right: $grid-columns-10;
+   padding-left: $grid-columns-10;
+}

@@ -1,0 +1,187 @@
+.block-blog{
+    @include rem(padding, 90px 0 140px 0);
+    &__heading{
+     
+        @include rem(margin-bottom, 20px);
+    }
+    &__content{
+        @include rem(margin-top, 70px);
+    }
+    &__wrap{
+        max-width: 1034px;
+        margin: 0 auto;
+    }
+    &__box{
+        @include rem(margin, 0 5px);
+    }
+    &__body{
+        @include rem(padding, 20px);
+        position: relative;
+        margin-top: -1px;
+    }
+    &__img{
+        position: relative;
+        z-index: 1;
+    }
+    &--thumb{
+        padding-bottom: calc( 0.67 * 100%);
+    }
+    &__para{
+        @include rem(font-size, 15px);
+        line-height: 18px;
+        font-weight: 500;
+        max-width: 230px;
+        color:$gray-1000;
+        @include rem(margin, 38px auto 30px auto);
+    }
+    &__subtitle{
+        // @include rem(font-size, 15px);
+    }
+    &__txt{
+        @include rem(margin-bottom, 6px);
+    }
+    &__title{
+        @include rem(margin-bottom, 8px);
+    }
+    &__date{
+        display: block;
+        font-weight: 600;
+    }
+    &-slider{
+        
+    }
+    &--pill{
+
+    }
+    &--page{
+        @include rem(margin-top, 11px);
+        @include rem(margin-bottom, 11px);
+    }
+}
+
+.row-16{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-p-16{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.row-22{
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+.col-p-22{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+
+.block-bloglayout{
+    @include rem(padding, 37px 0 68px 0);
+    &__featured{
+        display: block;
+        &-img{
+            z-index: 0;
+            padding-bottom: calc(0.53 * 100%);
+        }
+        &-text{
+            position: absolute;
+            z-index: 1;
+            background-color: rgba($cyan, 0.9);
+            display: block;
+            width: 100%;
+            color:white;
+            bottom: 12px;
+            left: 12px;
+            max-width: 340px;
+            @include rem(padding, 20px);
+        }
+        &-feature{
+            @include rem(font-size, 12px);
+            font-weight:600;
+        }
+        &-company{
+            @include rem(font-size, 16px);
+            font-weight: 600;
+        }
+        &-date{
+            font-weight: 500;
+        }
+        &-info{
+            font-weight: 500;
+            @include rem(font-size, 13px);
+        }
+        &-read{
+            @include rem(margin-top, 20px);
+        }
+    }
+    &__aside{
+        @include rem(margin-bottom, 16px);
+        border:1px $gray-240 solid;
+        @include rem(padding, 16px 16px 10px 16px);
+        &-title{
+            color:$cyan-four;
+        }
+    }
+    &--item{
+        @include rem(padding, 8px 0px);
+        color: $dark;
+        @include rem(font-size, 14px);
+        font-weight: 600;
+        border:none;
+        > a{
+            display: inline-block;
+            color: $dark;
+            text-decoration: none;
+            &:hover,
+            &:focus{
+                color:$cyan;
+            }
+        }
+        
+    }
+}
+
+ .pagination{
+    &--blog{
+        @include rem(margin-top, 75px);
+    }
+ }
+ .page-link{
+     &--blog{
+        border: none;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        padding:0 5px;
+        text-align: center;
+        font-weight: 600;
+        color: $dark;
+        @include rem(font-size, 12px);
+        border-radius: 50%;
+        margin: 0 2px;
+     }
+ }
+
+ .page-item{
+     &:first-child,
+     &:last-child {
+        .page-link{
+            &--blog{
+                border-radius: 50%;
+            }
+        }
+     }
+     &.active{
+        .page-link{
+            &--blog{
+                background-color: $warning;
+                color:white;
+            }
+        }
+     }
+ }

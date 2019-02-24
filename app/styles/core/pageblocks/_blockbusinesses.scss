@@ -1,0 +1,43 @@
+    .block-businesses{
+        @include rem(padding, 82px 0 92px 0);
+        &__heading{
+            @include rem(margin-bottom, 20px);
+        }
+        &__box{
+            @include rem(margin, 15px 0);
+        }
+        &__img{
+            position: relative;
+            margin-bottom: 0;
+            &::before{
+                
+                padding-bottom: 128px;
+                content: "";
+                display: block;
+            }
+        }
+        &__link{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        &__body{
+            @include rem(padding, 0px 28px 28px 28px);
+        }
+    
+        &__title{
+            // @include rem(margin-bottom, 10px);
+        }
+        &__content{
+            margin:0 auto;
+            max-width: 960px;
+            @include rem(margin-top, 50px);
+            
+        }
+        
+        
+    }
+

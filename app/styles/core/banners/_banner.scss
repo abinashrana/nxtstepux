@@ -1,12 +1,59 @@
 .block-banner{
     display: block;
     &--patterns{
-        background-color: red;
+        background-color: $info;
+        color:white;
+        &::before{
+            position: absolute;
+            z-index: 0;
+            content: "";
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background-image: url(../images/brand/bg-textures.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            // height: 100%;
+            // object-fit: cover;
+            // width: 100%;
+        }
+    }
+    &--top,
+    &--btm{
+        position: relative;
+        z-index: 1;
     }
     &--top{
-
+        color:white;
+        border-bottom: .03em solid rgba(#ffffff, 0.46);
+   
     }
     &--btm{
-        
+        z-index: 1;
+
+    }
+
+}
+
+.nav{
+    &--main{
+        // font-size:rem-calc(13);
+        font-weight: 700;
+        @include rem(font-size, 13px);
+        // @include rem-fallback(font-size, 13);
+
+    }
+    &--white{
+    //     padding: rem-calc(13);
+    @include rem(padding, 13px);
+    @include rem(margin, 0 36px);
+        color: white;
+        // margin: rem-calc(0 40);
+        &:hover{
+            color: white;
+        }
     }
 }

@@ -1,0 +1,70 @@
+.btn{
+    font-weight: 700;
+}
+
+.btn-light{
+    color: $info;
+}
+
+.btn-info{
+color: white;
+}
+
+.btn-w-320{
+    width: 100%;
+    max-width: 320px;
+}
+.btn-w-153{
+    width: 100%;
+    max-width: 153px;
+}
+
+
+.btn-10{
+    @include rem(font-size, 10px);
+    @include rem(padding, 10px);
+    @include rem(border-radius, 27px);
+}
+
+.btn-size-43{
+    @include rem(padding, 8px 10px);
+}
+
+.btn-size-34{
+    @include rem(padding, 5px 10px);
+}
+.btn-size-27{
+    @include rem(padding, 3px 10px);
+}
+
+.btn-size-42{
+    @include rem(padding,7.5px 10px);
+}
+
+.btn-warning{
+    color:white;
+    &:hover{
+        color:white;
+    }
+}
+
+.btn-15{
+    @include rem(font-size, 15px);
+}
+
+.btn-13{
+    @include rem(font-size, 13px);
+}
+
+.btn-16{
+    @include rem(font-size, 16px);
+    @include rem(padding, 6px 20px);
+    @include rem(border-radius, 27px);
+}
+
+.text-lighter{
+    color: $gray-400 !important;
+    &:hover,&:focus{
+        color: $black !important;
+    }
+}

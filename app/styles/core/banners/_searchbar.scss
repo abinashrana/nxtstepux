@@ -1,0 +1,40 @@
+
+.block-search{
+    @include rem(padding, 90px 0);
+    margin: 0 auto;
+    display: block;
+    &--innerpage{
+        @include rem(padding, 54px 0 67px 0);
+    }
+}
+
+.search-bar{
+    @include rem(margin, 37px 0 0 0);
+    display: block;
+}
+
+.btn-takestep{
+    @include rem(margin-top, 33px);
+}
+.search-bar{
+    &--form-control{
+        border-radius: 6px;
+        @include rem(font-size, 11px);
+        font-weight: 500;
+        color: $gray-250;
+        border-color: $gray-210;
+        height: calc(1.85em + 20px + 2px);
+        &::placeholder{
+            color: $gray-250;
+        }
+    }
+}
+
+.col-split{
+    &--5{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

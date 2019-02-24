@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(".block-roles-slider").slick({dots:!0,infinite:!0,slidesToShow:3,slidesToScroll:3}),$(".block-blog-slider").slick({dots:!0,infinite:!0,slidesToShow:3,slidesToScroll:3});

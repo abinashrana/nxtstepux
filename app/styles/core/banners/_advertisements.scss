@@ -1,4 +1,5 @@
 .block-adverstisement{
+    background-color: $gray-300;
     &::after{
         content: "";
         display: block;
@@ -9,6 +10,9 @@
     .bg-image{
         z-index: $zindex-dropdown;
     }
+    &--job{
+        background-color: $dark;
+    }
 }
 
 .bg-image {
@@ -18,6 +22,12 @@
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+.bg-image--ad{
+    left: 50%;
+    width: auto;
+    transform: translateX(-50%);
 }
 
 img.bg-image {

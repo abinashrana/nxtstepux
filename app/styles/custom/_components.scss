@@ -1,3 +1,25 @@
+@import "../core/slick/slick.scss";
+@import "../core/slick/slick-theme.scss";
+
+@import "../core/general/general";
+@import "../core/typo/type";
+@import "../core/grid/grid";
+
+@import "../core/buttons/buttons";
+
+@import "../core/layouts/footer";
+
 @import "../core/banners/banner";
 @import "../core/banners/advertisements";
+@import "../core/banners/searchbar";
+
 @import "../core/overlay/overlay";
+
+@import "../core/pageblocks/blockgraduate";
+@import "../core/pageblocks/blockbusinesses";
+@import "../core/pageblocks/blockservices";
+@import "../core/pageblocks/blockroles";
+@import "../core/pageblocks/blockblog";
+@import "../core/pageblocks/blocktab";
+@import "../core/pageblocks/blockindustry";
+@import "../core/pageblocks/blockjobs";
