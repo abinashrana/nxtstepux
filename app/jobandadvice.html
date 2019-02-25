@@ -96,12 +96,12 @@
                         <label for=""  class="search-bar__title-txt font-weight-bold">Where in NZ?</label>
                         <input type="text" class="form-control search-bar--form-control" placeholder="What are you searching for?">
                       </div>
-                      <div class="col-12 col-md-12 col-lg-3 col-split--5  col-p-10 d-flex justify-content-center align-self-end">
+                      <div class="col-12 col-md-12 col-lg-3 col-split--5 col-split--btn  col-p-10 d-flex justify-content-center align-self-end">
                           <button type="button" class="btn btn-lg btn-light btn-w-320 btn-takestep d-lg-none">Take the Nxt Step</button>
                         <button type="button" class="btn btn-light btn-block btn-w-153 btn-size-42 d-none d-lg-block">Search</button>
                       </div>
                     </div>
-
+                   
                   </form>
                 </div>
               </div>
@@ -111,12 +111,12 @@
       </div>
     </section>
 
-    <section class="block-adverstisement block-adverstisement--job position-relative text-center ">
+    <section class="block-adverstisement block-adverstisement--job position-relative text-center d-none d-md-block">
       <img src="images/ads/img-ad-two.png" class="bg-image bg-image--ad" alt="">
     </section>
     <section class="block-searchresults">
       <div class="block-searchresults__tabs d-flex justify-content-center border-bottom-grey-two">
-        <div class="list-group flex-row block-searchresults__list" id="myList" role="tablist">
+        <!-- <div class="list-group flex-row block-searchresults__list" id="myList" role="tablist">
           <a class="list-group-item rounded-0 border-0  block-searchresults__item m-0 active " data-toggle="list" href="#home"
             role="tab">Employers</a>
           <a class="list-group-item rounded-0 border-0  block-searchresults__item m-0" data-toggle="list" href="#profile"
@@ -124,14 +124,41 @@
           <a class="list-group-item rounded-0 border-0   block-searchresults__item m-0" data-toggle="list" href="#messages"
             role="tab">Job Guide</a>
 
-        </div>
+        </div> -->
+        <nav class="nav nav-pills nav-fill block-searchresults__list">
+          <a class="nav-item nav-link active" href="#">Employers</a>
+          <a class="nav-item nav-link" href="#">Apply Now</a>
+          <a class="nav-item nav-link" href="#">Job Guide</a>
+        </nav>
+      </div>
+      <div class="block-adverstisement block-adverstisement--job block-searchresults__img position-relative d-md-none">
+        <img src="images/ads/img-ad-two.png" class="bg-image bg-image--ad" alt="">
       </div>
       <div class="block-searchresults__content">
         <div class="container">
           <div class="mx-w-952 mx-auto">
-            <h2 class="block-searchresults__maintitle font-40 text-dark font-weight-bold mb-4">Employer Search Results:</h2>
+            <h2 class="block-searchresults__maintitle text-dark font-weight-bold mb-2 mb-md-4">Employer Search Results:</h2>
             <div class="row row-10">
-              <div class="col-lg-4 col-p-10 ">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10 ">
+                <div class="card rounded-0 block-searchresults--card">
+                  <figure class="img-layout__thumb block-searchresults__figure mb-0">
+                    <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
+                  </figure>
+                  <div class="card-body block-searchresults--body">
+                    <h5 class="card-title block-searchresults__title font-weight-bold text-dark">Card title</h5>
+                    <p class="block-searchresults__subtitle text-primary font-weight-bold">Hiring Now!</p>
+                    <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                      1500s</p>
+                  </div>
+                  <div class="card-footer rounded-0 p-0 border-0 block-searchresults--footer">
+                    <a href="#" class="btn btn-info btn-size-34 btn-15 btn-block" tabindex="0">
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <figure class="img-layout__thumb block-searchresults__figure mb-0">
                     <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
@@ -150,7 +177,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <figure class="img-layout__thumb block-searchresults__figure mb-0">
                     <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
@@ -169,7 +196,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10 ">
                 <div class="card rounded-0 block-searchresults--card">
                   <figure class="img-layout__thumb block-searchresults__figure mb-0">
                     <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
@@ -188,7 +215,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10 ">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <figure class="img-layout__thumb block-searchresults__figure mb-0">
                     <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
@@ -207,7 +234,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <figure class="img-layout__thumb block-searchresults__figure mb-0">
                     <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
@@ -226,26 +253,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
-                <div class="card rounded-0 block-searchresults--card">
-                  <figure class="img-layout__thumb block-searchresults__figure mb-0">
-                    <img class="block-searchresults__img img-layout--thumbimg rounded-0" src="images/img-employer-one.png">
-                  </figure>
-                  <div class="card-body block-searchresults--body">
-                    <h5 class="card-title block-searchresults__title font-weight-bold text-dark">Card title</h5>
-                    <p class="block-searchresults__subtitle text-primary font-13 font-weight-bold">Hiring Now!</p>
-                    <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                      1500s</p>
-                  </div>
-                  <div class="card-footer rounded-0 p-0 border-0 block-searchresults--footer">
-                    <a href="#" class="btn btn-info btn-size-34 btn-15 btn-block" tabindex="0">
-                      Learn more
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -284,7 +292,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -323,7 +331,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -362,7 +370,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -401,7 +409,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -440,7 +448,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-p-10">
+              <div class="col-12 col-sm-6 col-md-4 col-p-10">
                 <div class="card rounded-0 block-searchresults--card">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     <div class="block-searchresults__header-logo">
@@ -479,7 +487,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 col-p-10">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-p-10">
                 <div class="card rounded-0 block-searchresults--card card-row">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     
@@ -505,7 +513,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col-lg-9">
-                      <div class="card-body block-searchresults--body block-searchresults--body-flat py-0">
+                      <div class="card-body block-searchresults--body block-searchresults--body-flat pt-0 pb-md-0">
                         <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                           1500s</p>
@@ -523,7 +531,7 @@
                   
                 </div>
               </div>
-              <div class="col-lg-12 col-p-10">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-p-10">
                 <div class="card rounded-0 block-searchresults--card card-row">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     
@@ -549,7 +557,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col-lg-9">
-                      <div class="card-body block-searchresults--body block-searchresults--body-flat py-0">
+                      <div class="card-body block-searchresults--body block-searchresults--body-flat pt-0 pb-md-0">
                         <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                           1500s</p>
@@ -567,7 +575,7 @@
                   
                 </div>
               </div>
-              <div class="col-lg-12 col-p-10">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-p-10">
                 <div class="card rounded-0 block-searchresults--card card-row">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     
@@ -593,7 +601,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col-lg-9">
-                      <div class="card-body block-searchresults--body block-searchresults--body-flat py-0">
+                      <div class="card-body block-searchresults--body block-searchresults--body-flat pt-0 pb-md-0">
                         <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                           1500s</p>
@@ -611,7 +619,7 @@
                   
                 </div>
               </div>
-              <div class="col-lg-12 col-p-10">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-p-10">
                 <div class="card rounded-0 block-searchresults--card card-row">
                   <div class="block-searchresults__header d-flex flex-row align-items-center">
                     
@@ -637,7 +645,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col-lg-9">
-                      <div class="card-body block-searchresults--body block-searchresults--body-flat py-0">
+                      <div class="card-body block-searchresults--body block-searchresults--body-flat pt-0 pb-md-0">
                         <p class="card-text block-searchresults--text">Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                           1500s</p>
@@ -658,6 +666,7 @@
               
 
             </div>
+            <a href="#" class="text-info font-21 font-weight-bold d-inline-block mt-3 d-md-none">See all jobs (17)</a>
           </div>
 
         </div>
@@ -709,7 +718,7 @@
         </div>
         <div class="block-footer__mid border-bottom-redone-5">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-6 col-md-6 col-lg-3 col-xl-3">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -717,7 +726,7 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-6 col-md-6 col-lg-3 col-xl-3">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -725,7 +734,7 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-6 col-md-6 col-lg-3 col-xl-3 d-none d-md-block">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -733,17 +742,17 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-6 col-md-6 col-lg-3 col-xl-3 d-none d-md-block">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
 
               </ul>
-              <a href="#" class="btn btn-warning btn-16">Advertise on Nxt Step</a>
+              <a href="#" class="btn btn-warning btn-advertise">Advertise on Nxt Step</a>
             </div>
           </div>
-          <div class="block-footer__help my-3">
-            <div class="block-footer__info mb-3">
+          <div class="block-footer__help my-2 my-md-3">
+            <div class="block-footer__info mb-4 mb-md-3">
               <span class="text-secondary">Students:</span> <br>
               <a href="#" class="text-primary">students@nxtstep.co.nz</a>
             </div>
@@ -751,9 +760,12 @@
               <span class="text-secondary">Employers:</span> <br>
               <a href="#" class="text-primary">employers@nxtstep.co.nz</a>
             </div>
+            <div class="block-footer__info-btn mt-4 d-md-none">
+                <a href="#" class="btn btn-warning btn-block text-center">Advertise on Nxt Step</a>
+            </div>
           </div>
         </div>
-        <div class="block-footer__btm text-center py-4 text-center">
+        <div class="block-footer__btm text-center py-3  py-md-4 text-center">
           <p class="text-sm d-inline-block mb-0">
             <a href="#" class="d-inline-block text-lighter text-uppercase">© 2018, NXTSTEP</a>
           </p>

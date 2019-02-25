@@ -47,3 +47,10 @@
         fill: $gray-900;
      }     
 }
+
+.btn-advertise{
+    @extend .btn-16;
+    @include media-breakpoint-down(lg) { 
+        @include rem(font-size,14px);
+    }
+}

@@ -2,6 +2,58 @@
     display: block;
     &__tabs{
     }
+    &__list{
+        width: 100%;
+        @include media-breakpoint-up(md) { 
+            width:auto;
+        }
+        .nav-link{
+            border-radius: 0px;
+        @include rem(padding, 14px 15px);
+        @include rem(font-size, 14px);
+        font-weight: 600;
+        position: relative;
+        color: $gray-220;
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 14px 30px);
+        }
+        &:hover,
+        &:focus{
+            color: $cyan;
+            text-decoration: none;
+        }
+        &::after{
+            width: 1px;
+            height: 20px;
+            background-color: $gray-200;
+            display: block;
+            position: absolute;
+            right: 0;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        &.active{
+            background-color: transparent;
+            color: $cyan;
+            &::before{
+                width: 100%;
+                background-color: $cyan;
+                content: "";
+                height: 2px;
+                display: block;
+                    bottom: 0;
+                    position: absolute;
+                    left: 0;
+            }
+        }
+        }
+    }
     &__item{
         border-radius: 0px;
         @include rem(padding, 14px 30px);
@@ -47,7 +99,22 @@
     }
     &__content{
         display: block;
-        @include rem(padding, 60px 0 120px);
+        @include rem(padding, 20px 0 30px);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 60px 0 60px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(padding, 60px 0 120px);
+        }
+    }
+    &__maintitle{
+        @include rem(font-size, 17px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 30px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(font-size, 40px);
+        }
     }
     &--deck{
         margin-left: -5px;
@@ -75,18 +142,36 @@
         padding-bottom: 148px;
     }
     &__title{
-        @include rem(font-size, 20px);
+        @include rem(font-size, 25px);
         @include rem(margin-bottom, 0px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 20px);
+        }
+    }
+    &__subtitle{
+        @include rem(font-size, 18px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 13px);
+        }
     }
 
     &--16{
-        @include rem(font-size, 16px);
+       
+        @include rem(font-size, 25px);
+        @include rem(margin-bottom, 0px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 16px);
+        }
     }
     &--text{
         color:  $gray-910;
-        @include rem(font-size, 12px);
-        line-height: 15px;
+        @include rem(font-size, 16px);
+        line-height: 20px;
         @include rem(margin-bottom,28px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 12px);
+            line-height: 15px;
+        }
     }
     &--footer{
         background-color: transparent;
