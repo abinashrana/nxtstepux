@@ -1,0 +1,89 @@
+.navbar{
+    &--header{
+        @include rem(padding-top, 12px);
+        @include rem(padding-bottom, 12px);
+        .container-fluid{
+            @include media-breakpoint-up(md) { 
+                max-width: 720px;
+             }
+            @include media-breakpoint-up(lg) { 
+                max-width: 960px;
+             }
+            @include media-breakpoint-up(xl) { 
+                max-width: 1140px;
+             }
+        }
+    }
+}
+
+.nav--main{
+
+}
+
+.btn{
+    &--signin{
+        color: white;
+        text-decoration: none;
+        &:hover,
+        &:focus{
+            background-color: $primary;
+            border-color: $primary;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.sidenav-toggler {
+    cursor: pointer;
+    @include rem(padding, 10px 5px);
+}
+
+.sidenav-toggler-inner,
+.sidenav-toggler-line {
+    width: 22px;
+    transition: all .15s ease;
+}
+
+.sidenav-toggler-inner{
+    &:before {
+        position: absolute;
+        top: -14px;
+        left: -11px;
+        width: 40px;
+        height: 40px;
+        content: '';
+        transition: all .15s cubic-bezier(.68, -.55, .265, 1.55);
+        transform: scale(0);
+        border-radius: 50%;
+    }
+}
+
+.sidenav-toggler-inner, .sidenav-toggler-line {
+    width: 22px;
+    transition: all .15s ease;
+}
+
+.sidenav-toggler-line {
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: #172b4d;
+}
+
+.sidenav-toggler-line:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.sidenav-toggler-dark .sidenav-toggler-line {
+    background-color: $dark;
+}
+
+.sidenav-search{
+    display: block;
+    padding: 10px 5px;
+    line-height: 1;
+    &__icn{
+        height: 22px;
+    }
+}

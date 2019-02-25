@@ -28,7 +28,10 @@
     }
     &--top{
         color:white;
-        border-bottom: .03em solid rgba(#ffffff, 0.46);
+     
+        @include media-breakpoint-up(md) { 
+            border-bottom: .03em solid rgba(#ffffff, 0.46);
+        }
    
     }
     &--btm{
@@ -55,5 +58,11 @@
         &:hover{
             color: white;
         }
+        @include media-breakpoint-up(md) { 
+            @include rem(margin, 0 16px);
+         }
+         @include media-breakpoint-up(lg) { 
+            @include rem(margin, 0 36px);
+         }
     }
 }

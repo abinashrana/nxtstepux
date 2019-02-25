@@ -1,5 +1,11 @@
 .block-blog{
     @include rem(padding, 90px 0 140px 0);
+    @include media-breakpoint-up(md) { 
+        @include rem(padding, 60px 0 60px 0);
+    }
+    @include media-breakpoint-up(lg) { 
+        @include rem(padding, 90px 0 140px 0);
+    }
     &__heading{
      
         @include rem(margin-bottom, 20px);

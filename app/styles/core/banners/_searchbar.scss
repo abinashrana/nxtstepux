@@ -1,40 +1,92 @@
 
 .block-search{
-    @include rem(padding, 90px 0);
+    @include rem(padding, 20px 0 70px);
     margin: 0 auto;
     display: block;
+    @include media-breakpoint-up(md) { 
+        @include rem(padding, 60px 0);
+     }
+     @include media-breakpoint-up(lg) { 
+        @include rem(padding, 90px 0);
+     }
     &--innerpage{
-        @include rem(padding, 54px 0 67px 0);
+        @include rem(padding, 12px 0 35px 0);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 54px 0 67px 0);
+         }
+    }
+    &__title-txt{
+        @include rem(font-size, 22px);
+        line-height: 27px;
+        @include rem(padding-bottom, 30px);
+        position: relative;
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 20px);
+            padding-bottom: 0;
+         }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display:block;
+            width: 90px;
+            height: 5px;
+            background-color: white;
+            bottom: 0;
+            @include media-breakpoint-up(md) { 
+                display:none;
+            }
+        }
+        
     }
 }
 
 .search-bar{
-    @include rem(margin, 37px 0 0 0);
+    @include rem(margin, 28px 0 0 0);
     display: block;
+    @include media-breakpoint-up(md) { 
+        @include rem(margin, 37px 0 0 0);
+    }
+    &__title-txt{
+        @include rem(font-size, 23px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 13px);
+        }
+    }
 }
 
 .btn-takestep{
-    @include rem(margin-top, 33px);
+    @include rem(margin-top, 12px);
+    @include media-breakpoint-up(md) { 
+        @include rem(margin-top, 33px);
+    }
 }
 .search-bar{
     &--form-control{
         border-radius: 6px;
-        @include rem(font-size, 11px);
+        @include rem(font-size, 16px);
         font-weight: 500;
         color: $gray-250;
         border-color: $gray-210;
-        height: calc(1.85em + 20px + 2px);
+        height: calc(1.85em + 24px + 2px);
         &::placeholder{
             color: $gray-250;
+        }
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 11px);
+            height: calc(1.85em + 20px + 2px);
         }
     }
 }
 
 .col-split{
     &--5{
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-        max-width: 20%;
+        @include media-breakpoint-up(lg) { 
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
     }
 }

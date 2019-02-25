@@ -1,10 +1,22 @@
     .block-businesses{
-        @include rem(padding, 82px 0 92px 0);
+        @include rem(padding, 54px 0 54px 0);
+        @include media-breakpoint-down(sm) { 
+           border: none;
+        }
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 60px 0 70px 0);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(padding, 82px 0 92px 0);
+        }
         &__heading{
             @include rem(margin-bottom, 20px);
         }
         &__box{
-            @include rem(margin, 15px 0);
+            @include rem(margin, -1px -1px 0 -1px);
+            @include media-breakpoint-up(md) { 
+                @include rem(margin, 15px 0);
+            }
         }
         &__img{
             position: relative;
@@ -14,6 +26,12 @@
                 padding-bottom: 128px;
                 content: "";
                 display: block;
+            }
+            .img-fluid{
+                max-width: 80%;
+                @include media-breakpoint-up(md) { 
+                    max-width: 100%;
+                }
             }
         }
         &__link{
@@ -34,7 +52,10 @@
         &__content{
             margin:0 auto;
             max-width: 960px;
-            @include rem(margin-top, 50px);
+            @include rem(margin-top, 40px);
+            @include media-breakpoint-up(md) { 
+                @include rem(margin-top, 50px);
+            }
             
         }
         

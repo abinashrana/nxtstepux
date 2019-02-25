@@ -26,30 +26,51 @@
     <![endif]-->
 
   <div class="main-content">
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand mr-0 mr-md-2">
-          <span><img src="images/brand/logo-nxtstep.png" alt="nxtstep"></span>
-        </a>
-        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-          <li class="mr-13px"><a href="#" class="btn btn-outline-primary btn-sm">Sign in</a></li>
-          <li><a href="#" class="btn btn-primary btn-sm">Create Profile</a></li>
-        </ul>
-      </div>
-    </header>
+      <header class="navbar navbar--header navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-between justify-content-md-start align-items-center w-100">
+              <div class="navbar__left d-md-none">
+                <ul class="navbar-nav align-items-center ">
+                  <li class="nav-item ">
+                    <a href="#" class="sidenav-search">
+                      <img src="images/icons/icn-calender.png" class="sidenav-search__icn" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__mid mr-md-auto">
+                <a href="#" class="navbar-brand mr-0 mr-md-2">
+                  <span><img src="images/brand/logo-nxtstep.png" alt="nxtstep"></span>
+                </a>
+              </div>
+              <div class="navbar__right">
+                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex d-none d-md-block">
+                  <li class="mr-13px"><a href="#" class="btn btn-outline-primary btn-sm">Sign in</a></li>
+                  <li><a href="#" class="btn btn-primary btn-sm">Create Profile</a></li>
+                </ul>
+                <ul class="navbar-nav align-items-center d-md-none">
+                  <li class="nav-item">
+                    <a href="#" class="sidenav-search">
+                      <img src="images/icons/icn-search.svg" class="sidenav-search__icn" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item ml-2">
+                    <div class="sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                      <div class="sidenav-toggler-inner">
+                        <i class="sidenav-toggler-line"></i>
+                        <i class="sidenav-toggler-line"></i>
+                        <i class="sidenav-toggler-line"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
     <section class="block-banner position-relative block-banner--patterns">
-      <div class="nav-scroller block-banner--top">
-        <div class="container">
-          <nav class="nav nav-underline justify-content-center nav--main">
-            <a href="#" class="nav-link nav--white">Employers</a>
-            <a href="#" class="nav-link nav--white">Job</a>
-            <a href="#" class="nav-link nav--white">Industries</a>
-            <a href="#" class="nav-link nav--white">Blog</a>
-            <a href="#" class="nav-link nav--white">Graduate Calender</a>
-          </nav>
-        </div>
-      </div>
+        
       <div class="block-banner--btm">
         <div class="container">
           <div class="row">
@@ -59,24 +80,25 @@
                 <div class="search-bar mt-0">
                   <form action="">
                     <div class="row row-10">
-                      <div class="col-lg-3 col-split--5 col-p-10 d-flex flex-column  form-group mb-lg-0">
-                        <label for="" class="font-13 font-weight-bold">Education level</label>
+                      <div class="col-12 col-md-6 col-lg-3 col-split--5 col-p-10 d-flex flex-column  form-group mb-lg-0">
+                        <label for=""  class="search-bar__title-txt font-weight-bold">Education level</label>
                         <input type="text" class="form-control search-bar--form-control" placeholder="What are you searching for?">
                       </div>
-                      <div class="col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
-                        <label for="" class="font-13 font-weight-bold">Subject or Sector</label>
+                      <div class="col-12 col-md-6 col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
+                        <label for=""  class="search-bar__title-txt font-weight-bold">Subject or Sector</label>
                         <input type="text" class="form-control search-bar--form-control" placeholder="What are you searching for?">
                       </div>
-                      <div class="col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
-                        <label for="" class="font-13 font-weight-bold">I am looking for</label>
+                      <div class="col-12 col-md-6 col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
+                        <label for=""  class="search-bar__title-txt font-weight-bold">I am looking for</label>
                         <input type="text" class="form-control search-bar--form-control" placeholder="What are you searching for?">
                       </div>
-                      <div class="col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
-                        <label for="" class="font-13 font-weight-bold">Where in NZ?</label>
+                      <div class="col-12 col-md-6 col-lg-3 col-split--5  col-p-10 d-flex flex-column form-group mb-lg-0">
+                        <label for=""  class="search-bar__title-txt font-weight-bold">Where in NZ?</label>
                         <input type="text" class="form-control search-bar--form-control" placeholder="What are you searching for?">
                       </div>
-                      <div class="col-lg-3 col-split--5  col-p-10 d-flex align-self-end">
-                        <button type="button" class="btn btn-light btn-block btn-w-153 btn-size-42">Search</button>
+                      <div class="col-12 col-md-12 col-lg-3 col-split--5  col-p-10 d-flex justify-content-center align-self-end">
+                          <button type="button" class="btn btn-lg btn-light btn-w-320 btn-takestep d-lg-none">Take the Nxt Step</button>
+                        <button type="button" class="btn btn-light btn-block btn-w-153 btn-size-42 d-none d-lg-block">Search</button>
                       </div>
                     </div>
 

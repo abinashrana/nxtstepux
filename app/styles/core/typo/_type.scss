@@ -2,7 +2,7 @@
 .font-28{ @include font-size($font-size-28); }
 .font-20{ @include font-size($font-size-20); }
 .font-21{ @include font-size($font-size-21); }
-.font-22{ @include font-size($font-size-20); }
+.font-22{ @include font-size($font-size-22); }
 .font-16{ @include font-size($font-size-16); }
 .font-15{ @include font-size($font-size-15); }
 .font-14{ @include font-size($font-size-14); }
@@ -13,9 +13,17 @@
 
 .main-heading{
     position: relative;
-    @include rem(padding-bottom, 30px);
+    @include rem(padding-bottom, 10px);
     &__title{
-        @include font-size($font-size-40);
+        @include rem(font-size, 22px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 32px);
+            @include rem(padding-bottom, 20px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(font-size, 40px);
+            @include rem(padding-bottom, 30px);
+        }
     }
     &::after{
         content: "";

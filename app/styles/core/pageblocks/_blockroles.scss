@@ -1,11 +1,26 @@
 .block-roles{
-    @include rem(padding, 90px 0 90px 0);
+    @include rem(padding, 0);
+    @include media-breakpoint-down(sm) { 
+        border: none;
+    }
+    @include media-breakpoint-up(md) { 
+        @include rem(padding, 40px 0 40px 0);
+    }
+    @include media-breakpoint-up(lg) { 
+        @include rem(padding, 90px 0 90px 0);
+    }
     &__heading{
      
         @include rem(margin-bottom, 20px);
     }
     &__content{
-        @include rem(margin-top, 70px);
+        @include rem(margin-top, 35px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-top, 55px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(margin-top, 70px);
+        }
     }
     &__wrap{
         max-width: 1034px;
@@ -13,20 +28,38 @@
     }
     &__box{
         @include rem(padding, 23px);
-        @include rem(margin, 0 5px);
+        @include rem(margin, 0 auto);
+        max-width: 380px;
+        @include media-breakpoint-up(sm) { 
+           max-width: inherit;
+           @include rem(margin, 0 5px);
+        }
+        @include media-breakpoint-up(md) { 
+            max-width: inherit;
+            @include rem(margin, 0 5px);
+         }
     }
     &__para{
-        @include rem(font-size, 15px);
-        line-height: 18px;
+        @include rem(font-size, 17px);
+        line-height: 20px;
         font-weight: 500;
         color:$gray-1000;
-        @include rem(margin, 36px 0 43px 0);
+        @include rem(margin, 36px 0 36px 0);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 15px);
+            line-height: 18px;
+            @include rem(margin, 36px 0 43px 0);
+         }
     }
     &__subtitle{
         // @include rem(font-size, 15px);
     }
     &__txt{
         @include rem(margin-bottom, 6px);
+        @include rem(font-size, 25px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 21px);
+         }
     }
     &-slider{
         

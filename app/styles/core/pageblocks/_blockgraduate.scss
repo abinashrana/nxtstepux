@@ -1,41 +1,78 @@
 .block-profile{
-    @include rem(padding, 70px 0 130px 0);
+    @include rem(padding, 70px 0 55px 0);
+    @include media-breakpoint-up(md) { 
+        @include rem(padding, 80px 0 100px 0);
+    }
+    @include media-breakpoint-up(lg) { 
+        @include rem(padding, 80px 0 130px 0);
+    }
     &__heading{
         @include rem(margin-bottom, 20px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-bottom, 20px);
+        }
     }
     &__left{
 
     }
     &__right{
-        @include rem(margin-left, 133px);
+        @include rem(margin-top, 36px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-top, 0);
+            @include rem(margin-left, 80px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(margin-top, 0);
+            @include rem(margin-left, 133px);
+        }
     }
     &__title{
-        // @include rem(margin-bottom, 10px);
+        @include rem(font-size, 22px);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 24px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(font-size, 28px);
+        }
+    }
+
+    &__subtitle{
+        @include rem(font-size, 14px);
+        color:$gray-700;  
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 16px);
+        }  
     }
     &__content{
         margin:0 auto;
         max-width: 870px;
-        @include rem(margin-top, 57px);
-        
+        @include rem(margin-top, 60px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-top, 57px);
+        }
     }
     &__para{
-        @include rem(font-size, 15px);
-        line-height: 18px;
+        @include rem(font-size, 18px);
+        line-height: 22px;
         max-width: 428px;
         margin: 0 auto;
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 15px);
+            line-height: 18px;
+        }
         p{
 
         }
     }
     &--btn{
         margin:0 auto;
-        @include rem(margin-top, 50px);
+        @include rem(margin-top, 23px);
         max-width: 320px;
-
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-top, 30px);
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(margin-top, 50px);
+        }
     }
-}
-
-.subtitle{
-    @include font-size($font-size-16)
-    color:$gray-700;    
 }
