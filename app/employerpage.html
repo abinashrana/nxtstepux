@@ -69,7 +69,7 @@
       </div>
     </header>
 
-    <section class="block-banner position-relative block-banner--patterns">
+    <section class="block-banner position-relative block-banner--patterns d-none d-md-block">
       <div class="nav-scroller block-banner--top">
         <div class="container">
           <nav class="nav nav-underline justify-content-center nav--main nav--innerpage d-none d-md-flex flex-row">
@@ -79,16 +79,13 @@
             <a href="#" class="nav-link nav--white">Blog</a>
             <a href="#" class="nav-link nav--white">Graduate Calender</a>
           </nav>
-          <ul class="navbar-nav flex-row align-items-center justify-content-center ml-md-auto d-md-none py-3">
-            <li class="mr-13px"><a href="#" class="btn btn-link btn-sm btn--signin">Sign in</a></li>
-            <li><a href="#" class="btn btn-primary btn-sm">Create Profile</a></li>
-          </ul>
+         
         </div>
       </div>
     </section>
 
     <section class="block-adverstisement block-adverstisement--job block-adverstisement--employer position-relative text-center d-none d-md-block">
-      <img src="images/banner.jpg" class="bg-image-abs w-100" alt="">
+      <img src="images/banner.jpg" class="bg-image bg-image-abs" alt="">
     </section>
     <section class="block-searchresults">
       <div class="block-searchresults__tabs d-flex justify-content-center position-relative border-bottom-grey-two">
@@ -101,26 +98,34 @@
             role="tab">Job Guide</a>
 
         </div> -->
-        <a href="#" class="btn btn-link font-18 btn-link--info font-weight-normal d-flex align-items-center btn--back">
+        <a href="#" class="btn btn-link font-18 btn-link--info font-weight-500 d-md-flex align-items-center btn--back d-none d-md-block">
           <span class="icn-back mr-2"><img src="images/icons/icn-back.png" alt=""></span>
-          <span class="btn-txt-underline">Back to results</span></a>
-        <nav class="nav nav-pills nav-fill block-searchresults__list">
-          <a class="nav-item nav-link active" href="#">Lorem, ipsum.</a>
-          <a class="nav-item nav-link" href="#">Lorem, ipsum.</a>
-          <a class="nav-item nav-link" href="#">Lorem, ipsum.</a>
-          <a class="nav-item nav-link" href="#">Lorem, ipsum.</a>
-          <a class="nav-item nav-link" href="#">Lorem, ipsum.</a>
-        </nav>
+          <span class="btn-txt-underline d-md-none d-lg-block">Back to results</span></a>
+          <nav class="nav nav-pills nav-fill block-searchresults__list">
+            <a class="nav-item nav-link active" href="#">Overview</a>
+            <a class="nav-item nav-link" href="#">Graduate Programme</a>
+            <a class="nav-item nav-link" href="#">Interships</a>
+          </nav>
 
       </div>
-
+      <section class="block-adverstisement block-adverstisement--job block-adverstisement--employer position-relative text-center d-md-none">
+        <img src="images/banner.jpg" class="bg-image bg-image-abs" alt="">
+      </section>
       <div class="block-employer__content">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-lg-block-left">
               <div class="block-company__block">
-                <div class="block-company__logo text-left mb-4">
+                <div class="block-company__logo  mb-4">
                   <img src="images/brand/logo-at.png" class="img-fluid mx-4" alt="">
+                </div>
+                <div class="block-company__access text-center d-md-none">
+                    <a href="#" class="btn btn-primary btn-size-34 btn-15">Employment Oppurtunities</a>
+                    <div class="main-heading text-center my-4">
+                      <h2 class="main-heading__title font-weight-bold">
+                        What we're all about
+                      </h2>
+                    </div>
                 </div>
                 <div class="block-company__info position-relative">
                   <h4 class="block-company__name font-weight-bold">
@@ -146,83 +151,85 @@
                   </div>
                 </div>
 
-                <div class="block-company__divide">
-                  <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
-                    <div class="timeline-block">
-                      <span class="timeline-step"> </span>
-                      <div class="timeline-content">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <span class="text-dark text-sm font-weight-bold">High School</span>
+                <div class="d-flex w-100 flex-column">
+                  <div class="block-company__divide order-2">
+                    <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
+                      <div class="timeline-block">
+                        <span class="timeline-step"> </span>
+                        <div class="timeline-content">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <span class="text-dark text-sm font-weight-bold">High School</span>
+                            </div>
+  
                           </div>
-
+                          <h6 class="text-dark mb-0 timeblock__para ">Research careers and companies</h6>
                         </div>
-                        <h6 class="text-dark mb-0 timeblock__para ">Research careers and companies</h6>
                       </div>
-                    </div>
-                    <div class="timeline-block">
-                      <span class="timeline-step"> </span>
-                      <div class="timeline-content">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <span class="text-dark text-sm font-weight-bold">First year of tertiary study</span>
+                      <div class="timeline-block">
+                        <span class="timeline-step"> </span>
+                        <div class="timeline-content">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <span class="text-dark text-sm font-weight-bold">First year of tertiary study</span>
+                            </div>
+  
                           </div>
-
+                          <h6 class="text-dark mb-0 timeblock__para ">Attend careers and employer events</h6>
                         </div>
-                        <h6 class="text-dark mb-0 timeblock__para ">Attend careers and employer events</h6>
                       </div>
-                    </div>
-                    <div class="timeline-block">
-                      <span class="timeline-step"> </span>
-                      <div class="timeline-content">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <span class="text-dark text-sm font-weight-bold">Second to last year of tertiary study</span>
+                      <div class="timeline-block">
+                        <span class="timeline-step"> </span>
+                        <div class="timeline-content">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <span class="text-dark text-sm font-weight-bold">Second to last year of tertiary study</span>
+                            </div>
+  
                           </div>
-
+                          <h6 class="text-dark mb-0 timeblock__para ">Apply for internships and research graduate jobs</h6>
                         </div>
-                        <h6 class="text-dark mb-0 timeblock__para ">Apply for internships and research graduate jobs</h6>
                       </div>
-                    </div>
-                    <div class="timeline-block">
-                      <span class="timeline-step"> </span>
-                      <div class="timeline-content">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <span class="text-dark text-sm font-weight-bold">Last year of tertiary study</span>
+                      <div class="timeline-block">
+                        <span class="timeline-step"> </span>
+                        <div class="timeline-content">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <span class="text-dark text-sm font-weight-bold">Last year of tertiary study</span>
+                            </div>
+  
                           </div>
-
+                          <h6 class="text-dark mb-0 timeblock__para ">Apply for graduate jobs and programmes or consider
+                            post-graduate study</h6>
                         </div>
-                        <h6 class="text-dark mb-0 timeblock__para ">Apply for graduate jobs and programmes or consider
-                          post-graduate study</h6>
                       </div>
+  
                     </div>
-
+                  </div>
+                  <div class="block-company__divide block-company__extra order-1">
+                    <div class="block-company__extra-block">
+                      <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
+                        <img src="images/icons/icn-briefcase.svg" alt="">
+                        Offers jobs to students studying</h5>
+                      <p class="block-company__extra-tags mb-0">
+                        <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Business
+                          and Commerce</span>
+                        <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Planning
+                          and Surveying</span>
+                      </p>
+                    </div>
+                    <div class="block-company__extra-block">
+                      <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
+                        <img src="images/icons/icn-map.svg" alt="">
+                        Locations</h5>
+                      <p class="block-company__extra-tags mb-0">
+                        <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Auckland</span>
+                        <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Engineering</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="block-company__divide block-company__extra">
-                  <div class="block-company__extra-block">
-                    <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
-                      <img src="images/icons/icn-briefcase.svg" alt="">
-                      Offers jobs to students studying</h5>
-                    <p class="block-company__extra-tags mb-0">
-                      <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Business
-                        and Commerce</span>
-                      <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Planning
-                        and Surveying</span>
-                    </p>
-                  </div>
-                  <div class="block-company__extra-block">
-                    <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
-                      <img src="images/icons/icn-map.svg" alt="">
-                      Locations</h5>
-                    <p class="block-company__extra-tags mb-0">
-                      <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Auckland</span>
-                      <span class="badge badge-pill badge-pill--outline badge-pill--teal badge-pill--f-16 badge-primary block-company--pill">Engineering</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="block-company__divide block-company__extra border-0">
+                <div class="block-company__divide block-company__extra border-bottom-0 d-none d-md-block">
                   <div class="block-company__extra-block">
                     <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
                       <img src="images/icons/icn-fb-sm.svg" alt="">
@@ -232,36 +239,45 @@
                       </div>
                   </div>
                 </div>
-                <div class="block-company__divide block-company__share">
+                <div class="block-company__divide block-company__share border-bottom-0 d-none d-md-block">
                     <h5 class="block-company__share-title font-weight-bold">
                         Share this role
                     </h5>
-                    <a href="#" class="block-company__share-icn">
-                      <i class="uil uil-facebook-f">a</i>
-                    </a>
-                    <a href="#" class="block-company__share-icn">f</a>
-                    <a href="#" class="block-company__share-icn">f</a>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="block-company__share-icn rounded-circle d-flex justify-content-center mr-1">
+                        <i class="align-self-center fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="block-company__share-icn rounded-circle d-flex justify-content-center mr-1">
+                        <i class="align-self-center fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="block-company__share-icn rounded-circle d-flex justify-content-center mr-1">
+                        <i class="align-self-center fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    
                 </div>
 
               </div>
             </div>
             <div class="col-lg-7 col-lg-block-right">
               <div class="block-employer__right ">
-                <a href="#" class="btn btn-primary btn-w-280 mb-5">See all jobs</a>
+                <div class="d-none d-md-block">
+                  <a href="#" class="btn btn-primary btn-w-280 mb-5">See all jobs</a>
                 <div class="main-heading main-heading--line-left">
                   <h2 class="main-heading__title p-narrow font-weight-bold">
                     Graduate Profile
                   </h2>
                 </div>
+                </div>
                 <div class="block-employer__cms">
-                  <div class="block-employer__block">
+                  <div class="block-employer__block text-center text-md-left">
                     <h4>Will you be a part of Auckland’s future? Auckland Transport’s Graduate Programme</h4>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                       the industry's standard dummy text ever since the 1500s
                     </p>
                   </div>
-                  <div class="block-employer__block">
+                  <div class="block-employer__block text-center text-md-left">
                     <h4>Who are we and what do we do?</h4>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -269,7 +285,7 @@
                     </p>
                     <img src="images/img-blog-show.png" alt="" class="img-fluid">
                   </div>
-                  <div class="block-employer__block">
+                  <div class="block-employer__block text-center text-md-left">
                     <h4>Who are we and what do we do?</h4>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -280,7 +296,7 @@
                         allowfullscreen=""></iframe>
                     </div>
                   </div>
-                  <div class="block-employer__block">
+                  <div class="block-employer__block text-center text-md-left">
                     <h4>Who are we and what do we do?</h4>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -297,6 +313,19 @@
 
                     </p>
                     <img src="images/img-blog-show.png" alt="">
+                  </div>
+                </div>
+                <div class="block-company__divide block-company__extra b-none border-bottom-0 pt-0 d-md-none">
+                  <div class="block-company__extra-block">
+                    <h5 class="block-company__extra-title font-weight-bold mb-3 d-flex align-items-center">
+                      <img src="images/icons/icn-fb-sm.svg" alt="">
+                      Social</h5>
+                      <div class="block-company__fbpost">
+                          <img src="images/img-fb-post.png" alt="" class="img-fluid ">
+                      </div>
+                  </div>
+                  <div class="d-block text-center">
+                    <a href="#" class="btn btn-primary btn-size-34 btn-15">Employment Oppurtunities</a>
                   </div>
                 </div>
               </div>

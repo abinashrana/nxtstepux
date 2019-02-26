@@ -3,7 +3,10 @@
         @include rem(padding, 36px 0);
     }
     &__cms{
-        @include rem(padding, 38px 0);
+        @include rem(padding, 38px 0 0 0);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 38px 0);
+        }
         h4{
             @include font-size($font-size-22);
             font-weight: 700;
@@ -23,31 +26,65 @@
         }
     }
     &__block{
-        @include rem(margin-bottom, 45px);
+        @include rem(margin-bottom, 35px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-bottom, 45px);
+        }
+        
     }
     &__right {
-        @include rem(padding-left, 50px);
+       
+        @include media-breakpoint-up(md) { 
+            @include rem(padding-left, 10px);
+            &::before{
+                width: 1px;
+                background-color: $gray-230;
+                height: 100%;
+                content: "";
+                display: block;
+                position:absolute;
+                top: 0;
+                left: -1px;
+            }
+        }
+        @include media-breakpoint-up(lg) { 
+            @include rem(padding-left, 50px);
+        }
+        
+       
     }
 }
 
 .block-company{
     &__block{
-        @include rem(padding-right, 35px);
+       
         position: relative;
-        &::after{
-            width: 1px;
-            background-color: $gray-230;
-            height: 100%;
-            content: "";
-            display: block;
-            position:absolute;
-            top: 0;
-            right: -15px;
+        @include media-breakpoint-up(md) { 
+            @include rem(padding-right, 10px);
+            &::after{
+                width: 1px;
+                background-color: $gray-230;
+                height: 100%;
+                content: "";
+                display: block;
+                position:absolute;
+                top: 0;
+                right: -15px;
+            }
         }
+        @include media-breakpoint-up(lg) { 
+            @include rem(padding-right, 35px);
+        }
+        
     }
    
     &__logo{
-        @include rem(padding, 40px 0);
+        @include rem(padding, 20px 0);
+        text-align: center;
+        @include media-breakpoint-up(md) { 
+            text-align: left;
+            @include rem(padding, 40px 0);
+        }
     }
     &__name{
         @include font-size($font-size-22);
@@ -55,6 +92,7 @@
     }
     &__info{
         @include rem(padding-right, 40px);
+        @include rem(margin-top, 40px);
     }
     &--love{
         right: 0;
@@ -66,8 +104,29 @@
         color: $gray-720;
     }
     &__divide{
-        border-bottom: 1px solid $gray-230;
+        // border-bottom: 1px solid $gray-230;
         @include rem(padding, 25px 0);
+        position: relative;
+        &::after{
+            height: 1px;
+            display: block;
+           left:-15px;
+           right: -15px;
+            content: "";
+            background-color: $gray-230;
+            position: absolute;
+            bottom: -1px;
+            @include media-breakpoint-up(md) { 
+                width: 100%;
+                bottom:0;
+            }
+        }
+        &.b-none{
+           
+            &::after{
+                display: none;
+            }
+        }
     }
     &__extra{
         &-block{
@@ -94,6 +153,13 @@
         &-title{
             @include rem(font-size, 20px);
             color: $dark;
+        }
+        &-icn{
+            width: 43px;
+            height: 43px;
+            border:3px $dark solid;
+            color:$dark;   
+            @include rem(font-size, 22px);
         }
     }
 }

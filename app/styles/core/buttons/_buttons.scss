@@ -68,7 +68,7 @@ color: white;
 }
 
 .btn-size-34{
-    @include rem(padding, 5px 10px);
+    @include rem(padding, 5px 15px);
 }
 .btn-size-27{
     @include rem(padding, 3px 10px);
