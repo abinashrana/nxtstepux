@@ -16,9 +16,22 @@
     &--job{
         background-color: $dark;
     }
+    &--employer{
+        &::after{
+            content: "";
+            display: block;
+            padding-bottom: 56%;
+            position: relative;
+            z-index: 0;
+            @include media-breakpoint-up(md) { 
+                padding-bottom: 25.3%;
+            }
+        }
+    }
 }
 
-.bg-image {
+.bg-image,
+.bg-image-abs{
     position: absolute;
     top: 0;
     left: 0;
@@ -26,6 +39,8 @@
     height: 100%;
     z-index: 0;
 }
+
+
 
 .bg-image--ad{
     left: 50%;
@@ -40,4 +55,40 @@ img.bg-image {
     -o-object-fit: cover;
     object-fit: cover;
     font-family: 'object-fit: cover;';
+}
+
+.login-heading__text {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 8px;
+  font-family: "HelveticaNeue", Sans-serif;
+  
+}
+
+.login-heading__subtitle{
+    font-family: "HelveticaNeue", Sans-serif;
+    font-weight: normal;
+    color: #ff8a00;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .login-heading__text {
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .login-heading__text {
+    font-size: 35px;
+    line-height: 1.2em;
+  }
+
 }

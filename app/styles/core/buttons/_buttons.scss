@@ -14,11 +14,48 @@ color: white;
     width: 100%;
     max-width: 320px;
 }
+.btn-w-280{
+    width: 100%;
+    max-width: 280px;
+}
 .btn-w-153{
     width: 100%;
     max-width: 153px;
 }
 
+.btn-txt-underline{
+    text-decoration: underline;
+}
+
+.btn-link--info{
+    color: $cyan-five;
+    &:hover,
+    &:focus{
+        text-decoration: none;
+        color: $cyan-five;
+        .btn-txt-underline{
+            text-decoration: none;
+        }
+    }
+}
+
+.btn--back{
+    position: absolute;
+    left: 0;
+    &:hover,
+    &:focus{
+        text-decoration: none;
+        .btn-txt-underline{
+            text-decoration: none;
+        }
+    }
+}
+
+
+.icn-back{
+    line-height: 1;
+    height: 22px;
+}
 
 .btn-10{
     @include rem(font-size, 10px);

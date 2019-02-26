@@ -97,4 +97,27 @@
         border-color: white;
         color:  white;
     }
+    &--f-16{
+        @include rem(font-size, 16px);
+        font-weight:500;
+    }
+}
+
+.col-lg-block-left {
+
+    @include media-breakpoint-up(md) { 
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 38%;
+        flex: 0 0 38%;
+        max-width: 38%;
+    }
+}
+.col-lg-block-right {
+
+    @include media-breakpoint-up(md) { 
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 62%;
+        flex: 0 0 62%;
+        max-width: 62%;
+    }
 }
