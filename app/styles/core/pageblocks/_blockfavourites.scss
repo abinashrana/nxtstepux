@@ -1,0 +1,19 @@
+.block-favourites{
+    &--content{
+        @include rem(padding, 10px 0 36px 0);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 36px 0);
+        }
+    }
+    &__header{
+        display: block;
+        position: relative;
+        @include rem(padding-right, 55px);
+    }
+    &--love{
+        width: 27px;
+        height: 25px;
+        top: 3px;
+    }
+}
+

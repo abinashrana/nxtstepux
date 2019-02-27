@@ -1,0 +1,164 @@
+.block-oppurtunities{
+   &--right{
+    @include media-breakpoint-up(md) { 
+        @include rem(padding-left, 10px);
+    }
+    @include media-breakpoint-up(lg) { 
+        @include rem(padding-left, 20px);
+    }
+   }
+}
+
+.block-deck{
+    &__col{
+        @include rem(margin, 15px 0);
+    }
+    &--card{
+        border-color: $gray-730;
+    }
+    &__header{
+        @include rem(padding, 15px 40px 16px 20px);
+    }
+    &__footer{
+        background-color: white;
+        @include rem(padding, 10px 20px 20px 20px);
+    }
+    &__body{
+        @include rem(padding, 10px 20px 20px 20px);
+    }
+    &__title{
+        display: block;
+        @include rem(font-size, 25px);
+        line-height: 30px;
+        @include rem(margin-bottom, 2px);
+        display: block;
+    }
+    &__subtitle{
+        @include rem(font-size, 15px);
+        font-weight: normal;
+        color: $cyan;
+        display: block;
+    }
+    &__love{
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        width: 27px;
+        height: 25px;
+        display: block;
+        // fill: $primary;
+        // stroke: $primary;
+        fill: white;
+        stroke: $gray-720;
+        &.love-it{
+             fill: $primary;
+            stroke: $primary;
+        }
+    }
+    &__list{
+        display: block;
+        font-size: 0px;
+        @include rem(padding, 5px 0);
+        &:first-child{
+            @include rem(padding-top, 0);
+        }
+        &-title,
+        &-des{
+           display: inline-block;
+           @include rem(font-size, 15px);
+        }
+        &-title{
+            width: 40%;
+            font-weight: 600;
+        }
+        &-des{
+            width: 60%;
+            font-weight: normal;
+        }
+    }
+    &__header{
+        background-color: white;
+    }
+}
+
+.pagination{
+    &--oppurtunity{
+
+    }
+}
+
+.page-item.active .page-link--{
+
+}
+
+.block-deckdtls{
+    &__requirements{
+        color: $gray-910;
+        @include rem(font-size, 17px);
+        @include rem(margin-bottom, 30px);
+    }
+    &__title{
+        @include rem(font-size, 17px);
+        font-weight:700;
+    }
+    &__cms{
+        @include rem(font-size, 17px);
+        h4{
+            @include rem(font-size, 18px);
+            font-weight: 600;
+        }
+        p{
+            @include rem(font-size, 17px);
+            @include rem(margin-bottom, 20px);
+            line-height: 26px;
+        }
+        ul{
+            @include rem(font-size, 16px);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                position: relative;
+                @include rem(padding,0 0 0 26px);
+                @include rem(margin,14px 0);
+                &::before{
+                    width:11px;
+                    height: 11px;
+                    display: block;
+                    background-color:$cyan-five;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    border-radius: 50%;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
+
+.border-b-grey{
+    position: relative;
+    &::after{
+        height: 1px;
+        display: block;
+        left:-15px;
+        right: -15px;
+        content: "";
+        background-color: $gray-230;
+        position: absolute;
+        bottom: -1px;
+        @include media-breakpoint-up(md) { 
+            width: 100%;
+            bottom:0;
+            left:0;
+            right: 0;
+        }
+    }
+    &.b-none{
+        &::after{
+            display: none;
+        }
+    }
+}
+

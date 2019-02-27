@@ -25,6 +25,10 @@ color: white;
 
 .btn-txt-underline{
     text-decoration: underline;
+    &:hover,
+    &:focus{
+        text-decoration: none;
+    }
 }
 
 .btn-link--info{
@@ -91,6 +95,11 @@ color: white;
 
 .btn-13{
     @include rem(font-size, 13px);
+}
+
+
+.btn-20{
+    @include rem(font-size, 20px);
 }
 
 .btn-16{

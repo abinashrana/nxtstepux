@@ -1,3 +1,6 @@
+@import "../core/fonts/unicons";
+@import "../core/fonts/fontawesome";
+
 @import "../core/slick/slick.scss";
 @import "../core/slick/slick-theme.scss";
 
@@ -5,8 +8,7 @@
 @import "../core/typo/type";
 @import "../core/grid/grid";
 
-@import "../core/fonts/unicons";
-@import "../core/fonts/fontawesome";
+
 
 @import "../core/nav/navbar";
 
@@ -29,3 +31,8 @@
 @import "../core/pageblocks/blockindustry";
 @import "../core/pageblocks/blockjobs";
 @import "../core/pageblocks/blockemployer";
+@import "../core/pageblocks/blockoppurtunity";
+@import "../core/pageblocks/blockfavourites";
+@import "../core/pageblocks/blockcms";
+@import "../core/pageblocks/blocktwoblock";
+@import "../core/pageblocks/blockrolelist";

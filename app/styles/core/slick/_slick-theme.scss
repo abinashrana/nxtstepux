@@ -7,7 +7,7 @@
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
-$slick-font-path: "./fonts/" !default;
+$slick-font-path: "../fonts/slick/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
@@ -258,5 +258,25 @@ $slick-opacity-not-active: 0.25 !default;
             }
         }
         
+    }
+}
+
+
+.block-businesses-slider {
+    .slick-prev, .slick-next{
+    z-index: 3;
+   
+    }
+    .slick-prev{
+        left: 0;
+        &::before{
+            color: $gray-800;
+        }
+    }
+    .slick-next{
+        right: 0;
+        &::before{
+            color: $gray-800;
+        }
     }
 }

@@ -34,7 +34,29 @@
                 @include rem(padding-bottom,0);
             }
         }
+        &.white{
+            color: white;
+        }
+        &.font-sm{
+            @include rem(font-size, 22px);
+            @include media-breakpoint-up(md) { 
+                @include rem(font-size, 26px);
+            }
+            @include media-breakpoint-up(lg) { 
+                @include rem(font-size, 30px);
+            }
+        }
+        &.font-sm-two{
+            @include rem(font-size, 19px);
+            @include media-breakpoint-up(md) { 
+                @include rem(font-size, 22px);
+            }
+            @include media-breakpoint-up(lg) { 
+                @include rem(font-size, 24px);
+            }
+        }
     }
+
     &::after{
         content: "";
         width: 100%;
@@ -53,6 +75,11 @@
             max-width: 111px;
             left:0;
             transform: translateX(0);
+        }
+    }
+    &--line-white{
+        &::after{
+            background-color: white;
         }
     }
 }

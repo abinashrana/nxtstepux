@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="153px" viewBox="0 0 153 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="76.4478852" cy="76.4478852" r="76.4478852"></circle>
+        <path d="M5,0 L70.3895253,0 C73.150949,-7.86517626e-15 75.3895253,2.23857625 75.3895253,5 L75.3895253,45.3810524 C75.3895253,48.1424762 73.150949,50.3810524 70.3895253,50.3810524 L5,50.3810524 C2.23857625,50.3810524 3.38176876e-16,48.1424762 0,45.3810524 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-2">
+            <g id="Path-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <polygon fill="#EDEDED" mask="url(#mask-2)" points="39.6107088 97.3675946 89.7211086 151.666572 117.590557 149.584486 134.521807 136.26066 140.728407 124.517083 145.304421 113.758875 149.020144 108.838135 153.002801 103.684019 113.212837 52.269455"></polygon>
+            </g>
+            <g id="Path-4" transform="translate(39.000000, 49.495742)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#252B3C" xlink:href="#path-3"></use>
+                <path d="M-9,17.4840545 C20.7092588,39.9852193 52.6321357,39.9852193 86.7686308,17.4840545 C120.905126,-5.01711025 113.967475,-15.4573503 65.9556793,-13.8366656 L-5.11628605,-11.1566065 L-9,17.4840545 Z" fill="#3B424F" mask="url(#mask-4)"></path>
+            </g>
+            <path d="M76.5,70.4957423 L76.5,70.4957423 C78.9852814,70.4957423 81,72.510461 81,74.9957423 L81,86.4494804 C81,88.9347618 78.9852814,90.9494804 76.5,90.9494804 L76.5,90.9494804 C74.0147186,90.9494804 72,88.9347618 72,86.4494804 L72,74.9957423 C72,72.510461 74.0147186,70.4957423 76.5,70.4957423 Z" id="Path" fill="#ECF0F6"></path>
+            <circle id="Oval-4" fill="#252B3C" cx="76.598259" cy="85.0940013" r="3.59825898"></circle>
+        </g>
+    </g>
+</svg>

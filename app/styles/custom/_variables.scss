@@ -20,6 +20,9 @@ $gray-600: #262626 !default;
 $gray-700: #6D6D6D !default;
 $gray-710: #696969 !default;
 $gray-720: #777777 !default;
+$gray-720: #979797 !default;
+$gray-730: #D8D8D8 !default;
+$gray-740: #EDEDEE !default;
 $gray-800: #787878 !default;
 $gray-900: #212529 !default;
 $gray-910: #424242 !default;
@@ -60,6 +63,8 @@ $cyan-two:    #01B8CC !default;
 $cyan-three:    #C6E4E7 !default;
 $cyan-four:    #17BECC !default;
 $cyan-five:    #30BCB3 !default;
+$cyan-six:    #30BBDF !default;
+
 
 
 
@@ -213,7 +218,7 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
+  lg: 1024px,
   xl: 1200px
 ) !default;
 
@@ -227,9 +232,9 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  md: 760px,
+  lg: 994px,
+  xl: 1298px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
