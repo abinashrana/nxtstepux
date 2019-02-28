@@ -1,6 +1,9 @@
 .block-jobs {
   &__search {
-    @include rem(padding, 60px 0);
+    @include rem(padding, 40px 0);
+    @include media-breakpoint-up(md) { 
+      @include rem(padding, 60px 0);
+    }
   }
   &__list{
     display: block;
@@ -9,7 +12,13 @@
   &__list-item{
       display: inline-block;
       vertical-align: top;
-      width: 25%;
+      width: 50%;
+      @include media-breakpoint-up(sm) { 
+        width: 33.33%;
+      }
+      @include media-breakpoint-up(md) { 
+        width: 25%;
+      }
   }
   &__link{
       text-decoration: none;
@@ -32,7 +41,13 @@
     font-weight: 500;
   }
   &__categories{
-    @include rem(padding-bottom, 120px);
+    @include rem(padding-bottom, 60px);
+    @include media-breakpoint-up(md) { 
+      @include rem(padding-bottom, 90px);
+    }
+    @include media-breakpoint-up(lg) { 
+      @include rem(padding-bottom, 120px);
+    }
   }
 }
 
@@ -46,9 +61,12 @@
       color: white;
       outline: none;
       border-radius: 6px;
-      @include rem(padding, 10px 10px);
-      @include rem(font-size, 13px);
-
+      @include rem(padding, 10px 10px 10px 0px);
+      @include rem(font-size, 12px);
+      @include media-breakpoint-up(md) { 
+        @include rem(padding, 10px 10px);
+        @include rem(font-size, 13px);
+      }
       &:hover,
       &:focus {
         box-shadow: none;
@@ -65,14 +83,18 @@
 
     .input-group-prepend {
       >.input-group-text {
-        @include rem(padding, 2px 13px);
+        @include rem(padding, 2px 8px);
         background-color: $cyan-two;
         color: white;
-        width: 46px;
+        width: 36px;
         text-align: center;
         border-radius: 6px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        @include media-breakpoint-up(md) { 
+          @include rem(padding, 2px 13px);
+          width: 46px;
+        }
       }
     }
   }

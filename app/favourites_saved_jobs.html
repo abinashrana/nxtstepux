@@ -24,7 +24,78 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+  <div class="navbar-collapse offcanvas-collapse offcanvas-collapse--right offcanvas-collapse--215 navbar-light bg-white"
+    id="offcanvasSidenav">
+    <div class="scrollbar-inner">
+      <nav class="main-navblock">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Create Profile</span> <i class="icn-main"><img src="images/icons/icn-profile.png"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Sign in</span> <i class="icn-main"> <img src="images/icons/icn-signout.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Sign out</span> <i class="icn-main"> <img src="images/icons/icn-signout.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Settings</span> <i class="icn-main"><img src="images/icons/icn-settings.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Favourites</span> <i class="icn-main"><img src="images/icons/icn-favourite.svg"
+                  alt=""> </i></a>
+          </li>
+        </ul>
+        <hr class="my-2 ml-auto mr-0 d-md-none mx-w-85">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Employers</span> <i class="icn-main"><img src="images/icons/icn-employers.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Jobs</span> <i class="icn-main"><img src="images/icons/icn-searchsm.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Industries</span> <i class="icn-main"><img src="images/icons/icn-settings.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Blog</span> <i class="icn-main"><img src="images/icons/icn-blog.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Testimonials</span> <i class="icn-main"><img src="images/icons/icn-testimonials.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Favourites</span> <i class="icn-main"><img src="images/icons/icn-favouritestar.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Graduate Calender</span> <i class="icn-main"><img
+                  src="images/icons/icn-calendersm.png" alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">About Us</span> <i class="icn-main"><img src="images/icons/icn-info.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">Careers</span> <i class="icn-main"><img src="images/icons/icn-careers.svg"
+                  alt=""> </i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="nav-link-text">T's &amp; C's</span> <i class="icn-main"><img src="images/icons/icn-terms.svg"
+                  alt=""> </i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <div class="main-content">
     <header class="navbar navbar--header navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
       <div class="container-fluid">
@@ -55,7 +126,7 @@
                 </a>
               </li>
               <li class="nav-item ml-2">
-                <div class="sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler sidenav-toggler-dark" data-target="offcanvasSidenav" data-offcanvasfrom="offcanvas">
                   <div class="sidenav-toggler-inner">
                     <i class="sidenav-toggler-line"></i>
                     <i class="sidenav-toggler-line"></i>
@@ -98,14 +169,14 @@
             role="tab">Job Guide</a>
 
         </div> -->
-       
+
         <nav class="nav nav-pills nav-fill block-searchresults__list">
           <a class="nav-item nav-link active" href="#">Saved Jobs</a>
           <a class="nav-item nav-link" href="#">Employers</a>
         </nav>
 
       </div>
-     
+
       <div class="block-employer__content block-favourites--content">
         <div class="container container-mw-1268">
           <div class="row">
@@ -305,161 +376,161 @@
                       </div>
                     </div>
                     <div class="block-deck__col col-12 col-lg-6">
-                        <div class="card h-100 rounded-0 block-deck--card">
-                          <div class="card-header border-0 rounded-0 block-deck__header position-relative">
-                            <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
-                            <p class="block-deck__subtitle mb-0">Logistics</p>
-                            <a href="#" class="block-deck__love">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
-                                height="21">
-                                <defs>
-                                  <clipPath id="clip_0">
-                                    <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
-                                  </clipPath>
-                                </defs>
-                                <g clip-path="url(#clip_0)">
-                                  <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
-                                    d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
-                                </g>
-                              </svg>
-                            </a>
+                      <div class="card h-100 rounded-0 block-deck--card">
+                        <div class="card-header border-0 rounded-0 block-deck__header position-relative">
+                          <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
+                          <p class="block-deck__subtitle mb-0">Logistics</p>
+                          <a href="#" class="block-deck__love">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
+                              height="21">
+                              <defs>
+                                <clipPath id="clip_0">
+                                  <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
+                                </clipPath>
+                              </defs>
+                              <g clip-path="url(#clip_0)">
+                                <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
+                                  d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card-body block-deck__body">
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Type</div>
+                            <div class="block-deck__list-des">Entry Level</div>
                           </div>
-                          <div class="card-body block-deck__body">
-                            <div class="block-deck__list">
-                              <div class="block-deck__list-title">Type</div>
-                              <div class="block-deck__list-des">Entry Level</div>
-                            </div>
-                            <div class="block-deck__list">
-                              <div class="block-deck__list-title">Subject</div>
-                              <div class="block-deck__list-des">Design & IT</div>
-                            </div>
-                            <div class="block-deck__list">
-                              <div class="block-deck__list-title">Location</div>
-                              <div class="block-deck__list-des">Auckland</div>
-                            </div>
-                            <div class="block-deck__list">
-                              <div class="block-deck__list-title">Published</div>
-                              <div class="block-deck__list-des">1 week ago</div>
-                            </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Subject</div>
+                            <div class="block-deck__list-des">Design & IT</div>
                           </div>
-                          <div class="card-footer block-deck__footer rounded-0 border-0">
-                            <a href="#" class="btn btn-primary btn-20 btn-block">
-                              Apply Now
-                            </a>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Location</div>
+                            <div class="block-deck__list-des">Auckland</div>
                           </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Published</div>
+                            <div class="block-deck__list-des">1 week ago</div>
+                          </div>
+                        </div>
+                        <div class="card-footer block-deck__footer rounded-0 border-0">
+                          <a href="#" class="btn btn-primary btn-20 btn-block">
+                            Apply Now
+                          </a>
                         </div>
                       </div>
-                      <div class="block-deck__col col-12 col-lg-6">
-                          <div class="card h-100 rounded-0 block-deck--card">
-                            <div class="card-header border-0 rounded-0 block-deck__header position-relative">
-                              <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
-                              <p class="block-deck__subtitle mb-0">Logistics</p>
-                              <a href="#" class="block-deck__love">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
-                                  height="21">
-                                  <defs>
-                                    <clipPath id="clip_0">
-                                      <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
-                                    </clipPath>
-                                  </defs>
-                                  <g clip-path="url(#clip_0)">
-                                    <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
-                                      d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
-                                  </g>
-                                </svg>
-                              </a>
-                            </div>
-                            <div class="card-body block-deck__body">
-                              <div class="block-deck__list">
-                                <div class="block-deck__list-title">Type</div>
-                                <div class="block-deck__list-des">Entry Level</div>
-                              </div>
-                              <div class="block-deck__list">
-                                <div class="block-deck__list-title">Subject</div>
-                                <div class="block-deck__list-des">Design & IT</div>
-                              </div>
-                              <div class="block-deck__list">
-                                <div class="block-deck__list-title">Location</div>
-                                <div class="block-deck__list-des">Auckland</div>
-                              </div>
-                              <div class="block-deck__list">
-                                <div class="block-deck__list-title">Published</div>
-                                <div class="block-deck__list-des">1 week ago</div>
-                              </div>
-                            </div>
-                            <div class="card-footer block-deck__footer rounded-0 border-0">
-                              <a href="#" class="btn btn-primary btn-20 btn-block">
-                                Apply Now
-                              </a>
-                            </div>
+                    </div>
+                    <div class="block-deck__col col-12 col-lg-6">
+                      <div class="card h-100 rounded-0 block-deck--card">
+                        <div class="card-header border-0 rounded-0 block-deck__header position-relative">
+                          <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
+                          <p class="block-deck__subtitle mb-0">Logistics</p>
+                          <a href="#" class="block-deck__love">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
+                              height="21">
+                              <defs>
+                                <clipPath id="clip_0">
+                                  <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
+                                </clipPath>
+                              </defs>
+                              <g clip-path="url(#clip_0)">
+                                <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
+                                  d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card-body block-deck__body">
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Type</div>
+                            <div class="block-deck__list-des">Entry Level</div>
+                          </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Subject</div>
+                            <div class="block-deck__list-des">Design & IT</div>
+                          </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Location</div>
+                            <div class="block-deck__list-des">Auckland</div>
+                          </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Published</div>
+                            <div class="block-deck__list-des">1 week ago</div>
                           </div>
                         </div>
-                        <div class="block-deck__col col-12 col-lg-6">
-                            <div class="card h-100 rounded-0 block-deck--card">
-                              <div class="card-header border-0 rounded-0 block-deck__header position-relative">
-                                <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
-                                <p class="block-deck__subtitle mb-0">Logistics</p>
-                                <a href="#" class="block-deck__love">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
-                                    height="21">
-                                    <defs>
-                                      <clipPath id="clip_0">
-                                        <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
-                                      </clipPath>
-                                    </defs>
-                                    <g clip-path="url(#clip_0)">
-                                      <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
-                                        d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
-                                    </g>
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="card-body block-deck__body">
-                                <div class="block-deck__list">
-                                  <div class="block-deck__list-title">Type</div>
-                                  <div class="block-deck__list-des">Entry Level</div>
-                                </div>
-                                <div class="block-deck__list">
-                                  <div class="block-deck__list-title">Subject</div>
-                                  <div class="block-deck__list-des">Design & IT</div>
-                                </div>
-                                <div class="block-deck__list">
-                                  <div class="block-deck__list-title">Location</div>
-                                  <div class="block-deck__list-des">Auckland</div>
-                                </div>
-                                <div class="block-deck__list">
-                                  <div class="block-deck__list-title">Published</div>
-                                  <div class="block-deck__list-des">1 week ago</div>
-                                </div>
-                              </div>
-                              <div class="card-footer block-deck__footer rounded-0 border-0">
-                                <a href="#" class="btn btn-primary btn-20 btn-block">
-                                  Apply Now
-                                </a>
-                              </div>
-                            </div>
+                        <div class="card-footer block-deck__footer rounded-0 border-0">
+                          <a href="#" class="btn btn-primary btn-20 btn-block">
+                            Apply Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-deck__col col-12 col-lg-6">
+                      <div class="card h-100 rounded-0 block-deck--card">
+                        <div class="card-header border-0 rounded-0 block-deck__header position-relative">
+                          <h4 class="block-deck__title font-weight-bold">Ux Designer</h4>
+                          <p class="block-deck__subtitle mb-0">Logistics</p>
+                          <a href="#" class="block-deck__love">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23"
+                              height="21">
+                              <defs>
+                                <clipPath id="clip_0">
+                                  <rect x="-443.60-001" y="-1462.15" width="1368" height="2739.8" clip-rule="evenodd"></rect>
+                                </clipPath>
+                              </defs>
+                              <g clip-path="url(#clip_0)">
+                                <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.95 0 0 0.95 1 0.849976)"
+                                  d="M11.4976 3.37121C11.6127 3.19882 11.7154 3.03627 11.8266 2.87983C12.5717 1.83209 13.5066 1.01008 14.695 0.495626C15.6088 0.100034 16.5647 -0.0504031 17.5571 0.0309432C19.0344 0.152018 20.3101 0.717043 21.3482 1.7806C22.2303 2.68432 22.7444 3.77483 22.9289 5.02138C23.0423 5.78784 23.0011 6.55572 22.936 7.32263C22.8682 8.11961 22.7128 8.89922 22.447 9.65542C22.0375 10.821 21.3661 11.826 20.5512 12.743C19.7221 13.6761 18.7963 14.5093 17.8611 15.3324C16.2359 16.7629 14.6065 18.1887 12.9847 19.623C12.5076 20.045 12.05 20.4888 11.5835 20.9226C11.5576 20.9466 11.5314 20.9704 11.4991 21C11.3661 20.8756 11.2357 20.7545 11.1061 20.6324C9.65011 19.2597 8.14568 17.9412 6.63327 16.6314C5.45652 15.6124 4.26618 14.6081 3.1654 13.5049C2.42778 12.7656 1.74831 11.9794 1.21498 11.0762C0.664746 10.1444 0.323788 9.13942 0.155265 8.07279C0.0287214 7.27174 -0.0232924 6.46536 0.00966469 5.65642C0.109932 3.19448 1.62744 1.10781 3.89935 0.359248C6.34372 -0.446146 8.49521 0.11875 10.3394 1.89212C10.7669 2.30315 11.1238 2.77337 11.4355 3.27759C11.4523 3.30476 11.4707 3.33088 11.4976 3.37121"></path>
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card-body block-deck__body">
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Type</div>
+                            <div class="block-deck__list-des">Entry Level</div>
                           </div>
-                    
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Subject</div>
+                            <div class="block-deck__list-des">Design & IT</div>
+                          </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Location</div>
+                            <div class="block-deck__list-des">Auckland</div>
+                          </div>
+                          <div class="block-deck__list">
+                            <div class="block-deck__list-title">Published</div>
+                            <div class="block-deck__list-des">1 week ago</div>
+                          </div>
+                        </div>
+                        <div class="card-footer block-deck__footer rounded-0 border-0">
+                          <a href="#" class="btn btn-primary btn-20 btn-block">
+                            Apply Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
                 <nav aria-label="Page navigation example " class="d-none d-md-block">
-                    
-                    <ul class="pagination pagination--oppurtunity justify-content-center mb-0 mt-5 ">
-                        <!-- <li class="page-item">
+
+                  <ul class="pagination pagination--oppurtunity justify-content-center mb-0 mt-5 ">
+                    <!-- <li class="page-item">
                           <a class="page-link" href="#" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li> -->
-                        <li class="page-item active"><a class="page-link page-link--33 " href="#">1</a></li>
-                        <li class="page-item"><a class="page-link page-link--33" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link page-link--33" href="#">3</a></li>
-                        <li class="page-item">
-                          <a class="page-link  page-link--next page-link--33 " href="#" aria-label="Next">
-                            <span aria-hidden="true">»</span>
-                          </a>
-                        </li>
-                      </ul>
-                  </nav>
+                    <li class="page-item active"><a class="page-link page-link--33 " href="#">1</a></li>
+                    <li class="page-item"><a class="page-link page-link--33" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link page-link--33" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link  page-link--next page-link--33 " href="#" aria-label="Next">
+                        <span aria-hidden="true">»</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -513,7 +584,7 @@
         </div>
         <div class="block-footer__mid border-bottom-redone-5">
           <div class="row">
-            <div class="col-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-6 col-md-3">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -521,7 +592,7 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-6 col-md-3">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -529,7 +600,7 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 col-xl-3 d-none d-md-block">
+            <div class="col-6 col-md-3 d-none d-md-block">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
@@ -537,13 +608,13 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 col-xl-3 d-none d-md-block">
+            <div class="col-6 col-md-3 d-none d-md-block">
               <ul class="list-unstyled block-footer--list">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">About us</a></li>
 
               </ul>
-              <a href="#" class="btn btn-warning btn-advertise">Advertise on Nxt Step</a>
+              <a href="#" class="btn btn-warning btn-16">Advertise on Nxt Step</a>
             </div>
           </div>
           <div class="block-footer__help my-2 my-md-3">
@@ -589,10 +660,14 @@
   </script>
 
   <!-- build:js scripts/vendor.js -->
-
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="scripts/jquery.scrollbar.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-scrollLock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/slick.js"></script>
+
 
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->

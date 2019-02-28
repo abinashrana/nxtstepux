@@ -1,7 +1,10 @@
 
 .block-industry{
     &__content{
-        @include rem(padding, 50px 0 94px);
+        @include rem(padding, 30px 0 64px);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 50px 0 94px);
+          }
     }
     &__maintitle{
         display: block;
