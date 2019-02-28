@@ -99,3 +99,111 @@
     }
 
 }
+
+.dropdown{
+    &--select{
+
+    }
+}
+
+.btn--select{
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
+    border:1px $gray-210 solid;
+    @include rem(font-size, 16px);
+    font-style: italic;
+    background-color:white;
+    position: relative;
+    color: $gray-270;
+    font-weight: 500;
+    border-radius: 6px;
+    overflow: hidden;
+    @include rem(padding,12px 17px);
+    &::after{
+        display: none;
+    }
+    @include media-breakpoint-up(md) { 
+        @include rem(font-size, 11px); 
+        @include rem(padding,12px 11px);
+    }
+    .show &{
+        border-radius: 6px 6px 0px 0px;
+    }
+}
+
+.icn--caret{
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 36px;
+    background-color: white;
+    color:$gray-260;
+    top: 0;
+    @include rem(font-size, 25px);
+    color: $gray-260;
+    z-index: 1;
+}
+
+.dropdown-menu{
+    &--select{
+        width: 100%;
+        padding: 0;
+        @include rem(font-size, 18px);
+        font-weight: normal;
+        border:1px $gray-210 solid;
+        @include rem(padding, 6px 0);
+        @include media-breakpoint-up(md) { 
+            @include rem(font-size, 15px); 
+            @include rem(padding, 10px 0);
+        }
+        a{
+            color: $dark;
+            text-decoration: none;
+        }
+        &.child{
+            @include rem(padding,0 0 0 30px);
+            @include media-breakpoint-up(md) { 
+                @include rem(padding,0 0 0 20px);
+            }
+        }
+    }
+}
+
+.dropdown-search{
+    &__input{
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        @include rem(padding, 8px 9px);
+        line-height: 1;
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 8px 11px);
+        }
+        &.selected{
+            .dropdown-search__check{
+                display: block;
+            }
+        }
+    }
+    &__text{
+
+    }
+    &__check-mark{
+        width: 30px;
+        height: 30px;
+        border:1px $gray-730 solid;
+        display: block;
+        color: $cyan;
+        @include rem(font-size, 30px);
+        overflow: hidden;
+        @include media-breakpoint-up(md) { 
+            width: 20px;
+            height: 20px;
+            @include rem(font-size, 24px);
+        }
+    }
+    &__check{
+        display: none;
+    }
+}

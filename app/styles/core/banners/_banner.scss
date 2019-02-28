@@ -1,5 +1,6 @@
 .block-banner{
     display: block;
+    z-index: $zindex-dropdown;
     &--patterns{
         background-color: $info;
         color:white;

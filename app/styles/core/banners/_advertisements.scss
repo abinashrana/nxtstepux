@@ -1,5 +1,6 @@
 .block-adverstisement{
     background-color: $gray-300;
+    z-index: 0;
     &::after{
         content: "";
         display: block;
