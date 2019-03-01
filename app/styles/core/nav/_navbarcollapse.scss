@@ -16,7 +16,7 @@
 
     transition: all .15s ease;
 
-    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15);
+    
 }
 .offcanvas-collapse--right
 {
@@ -28,6 +28,7 @@
 .offCanvas-open .offcanvas-collapse--right.open
 {
     right: 0;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .5);
 }
 .offcanvas-collapse--left
 {

@@ -25,6 +25,7 @@
         position: relative;
         margin-top: -1px;
     }
+   
     &__img{
         position: relative;
         z-index: 1;
@@ -92,19 +93,29 @@
         display: block;
         &-img{
             z-index: 0;
-            padding-bottom: calc(0.53 * 100%);
+            padding-bottom: 447px;
+            @include media-breakpoint-up(md) { 
+                padding-bottom: calc(0.53 * 100%);
+            }
         }
         &-text{
             position: absolute;
             z-index: 1;
             background-color: rgba($cyan, 0.9);
             display: block;
-            width: 100%;
+            width: auto;
             color:white;
             bottom: 12px;
             left: 12px;
-            max-width: 340px;
+            right: 12px;
+            max-width: 100%;
             @include rem(padding, 20px);
+            @include media-breakpoint-up(md) { 
+                bottom: 12px;
+                left: 12px;
+                width: 100%;
+                max-width: 340px;
+            }
         }
         &-feature{
             @include rem(font-size, 12px);
@@ -128,9 +139,43 @@
     &__aside{
         @include rem(margin-bottom, 16px);
         border:1px $gray-240 solid;
-        @include rem(padding, 16px 16px 10px 16px);
+        @include rem(padding, 0);
+        background-color: $cyan-seven;
+        border-radius: 6px;
+        @include media-breakpoint-up(md) { 
+            background-color: white;
+            @include rem(padding, 16px 16px 16px 16px);
+            border-radius: 0px;
+        }
         &-title{
-            color:$cyan-four;
+            color:white;
+            @include rem(font-size, 16px);
+            margin-bottom: 0;
+            font-weight: 500;
+            position: relative;
+            @include rem(padding, 14px 16px);
+            &:after{
+                width: 0px;
+                height: 0px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid white;
+                content: "";
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include media-breakpoint-up(md) { 
+                    display: none;
+                }
+            }
+            @include media-breakpoint-up(md) { 
+                color:$cyan-four;
+                @include rem(font-size, 22px);
+                font-weight: 700;
+                padding: 0;
+               
+            }
         }
     }
     &--item{
@@ -139,16 +184,42 @@
         @include rem(font-size, 14px);
         font-weight: 600;
         border:none;
+        background-color: transparent;
+        @include media-breakpoint-up(md) { 
+            background-color: white;
+        }
         > a{
             display: inline-block;
-            color: $dark;
+            color: white;
             text-decoration: none;
+            @include media-breakpoint-up(md) { 
+                color: $dark;
+            }
             &:hover,
             &:focus{
-                color:$cyan;
+               
+                color: white;
+                @include media-breakpoint-up(md) { 
+                    color:$cyan;
+                }
             }
         }
         
+    }
+    &--list-group{
+        @include rem(padding, 0px 16px 14px 16px);
+        @include media-breakpoint-up(md) { 
+            @include rem(padding, 0);
+            margin-top: 10px;
+        }
+    }
+    &__list{
+        @include rem(margin-top, 20px);
+        @include rem(padding,0 10px);
+         @include media-breakpoint-up(md) { 
+            @include rem(margin-top,0px);
+            padding: 0;
+         }
     }
 }
 
@@ -187,7 +258,13 @@
 
  .pagination{
     &--blog{
-        @include rem(margin-top, 75px);
+        @include rem(margin-top, 35px);
+        @include media-breakpoint-up(md) { 
+            @include rem(margin-top, 55px);
+         }
+          @include media-breakpoint-up(lg) { 
+            @include rem(margin-top, 75px);
+         }
     }
     &--yellow{
         .page-item.active .page-link{

@@ -1,0 +1,135 @@
+.block-calender{
+    @include rem(padding, 90px 0 140px 0);
+    @include media-breakpoint-up(md) { 
+        @include rem(padding, 60px 0 60px 0);
+    }
+    @include media-breakpoint-up(lg) { 
+        @include rem(padding, 90px 0 140px 0);
+    } 
+  }
+
+.fc-icon-angle-right{
+    &:before { 
+        content: '\e82c'; 
+  } 
+}
+.fc-icon-angle-left:before {
+     content: '\e82a'; 
+}
+
+.fc button{
+    background: transparent;
+    padding: 0;
+    font-family: "unicons";
+}
+
+.fc button .fc-icon{
+    width: 50px;
+    margin: 0;
+    text-shadow: none;
+    top: 0;
+    margin: 0;
+    display: block;
+    font-size: 36px;
+}
+
+
+.fc-state-default{
+    background: white;
+    box-shadow: none;
+    border:none;
+    border-radius: 0px;
+}
+.fc .fc-row {
+    border-style: solid;
+    border-width: 0;
+}
+
+.fc .fc-widget-header {
+    border: 0;
+}
+
+.fc-row:first-child table {
+    border-top: 0 hidden transparent;
+}
+.fc-row table {
+    border-left: 0 hidden transparent;
+    border-right: 0 hidden transparent;
+    border-bottom: 0 hidden transparent;
+}
+
+.fc th {
+    text-align: center;
+    border-bottom-width: 1px;
+   @include rem(font-size, 13px);
+    text-transform: uppercase;
+    color: $gray-750;
+    font-weight: 400;
+    padding-bottom: 15px;
+    @include media-breakpoint-up(md) { 
+        @include rem(font-size, 18px);
+    }
+}
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number{
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    @include rem(font-size, 18px);
+    font-weight: 600;
+    color: $gray-940;
+    @include rem(padding, 8px 0);
+    line-height: 1;
+    @include media-breakpoint-up(md) { 
+        @include rem(font-size, 32px);
+        @include rem(padding, 12px 0);
+    }
+}
+
+.fc td:last-child{
+    border-right:0px;
+}
+
+.fc td:first-child{
+    border-left: 0;
+}
+
+.fc-toolbar.fc-header-toolbar{
+    @include rem(margin-bottom, 15px);
+    @include media-breakpoint-up(md) { 
+        @include rem(margin-bottom, 30px);
+    }
+}
+
+.fc-event .fc-title {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.fc-event, .fc-event-dot{
+    background-color: $primary;
+    border:none;
+    color: white;
+    border-radius: 4px 0px 0px 4px;
+    @include media-breakpoint-up(md) { 
+        border-radius: 6px 0px 0px 6px;
+    }
+}
+
+.fc-day-grid-event{
+    margin: 2px 0 0 8px;
+    padding: 2px 8px;
+    @include rem(font-size, 10px);
+    @include media-breakpoint-up(md) { 
+        margin: 4px 0 0 15px;
+        padding: 5px 10px;
+        @include rem(font-size, 14px);
+    }
+}
+a:not([href]):not([tabindex]){
+    color: white;
+}
+

@@ -20,7 +20,10 @@
   }
   */
    
-   [class^="uil-"]:before, [class*=" uil-"]:before {
+   [class^="uil-"]:before,
+   [class*=" uil-"]:before,
+   [class^="fc-icon-"]:before,
+   [class*="fc-icon-"]:before {
     font-family: "unicons";
     font-style: normal;
     font-weight: normal;
